@@ -7,7 +7,7 @@ function setup(){
  for(var i = 0; i < 600; i++) {
    var x = random (-width, width/2);
    var y = random (-height, 0);
-   var sizespeed = random(0, 6);
+   var sizespeed = random(0, 5);
    var red = random(0, 55);
    var green = random(0, 55);
    var blue = random(0, 55);
@@ -37,8 +37,8 @@ function Sparkle(tempX, tempY, tempSize, tempR, tempG, tempB, tempSpeed){
   this.speed = tempSpeed;
 
   this.move = function(){
-    this.y = this.y + (this.speed/3);
-    this.x = this.x + (this.speed/3);
+    this.y = this.y + (this.speed/4);
+    this.x = this.x + (this.speed/4);
   };
 
   this.display = function(){
